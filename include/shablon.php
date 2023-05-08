@@ -44,7 +44,7 @@ while(list($cid,$detail)=@each($menuitems)){
 		}
 	}
 	echo '	<TR><TD><A href="'.$link.'"; title="'.$desc.'">'.
-		'<IMG class="menu" src="'.$PSA_SITE_NAME.$sec_sys->getImgLink($src).'" alt="'.$desc.'"></A></TD></TR>'."\n";
+		'<IMG class="menu" src="'.$sec_sys->getImgLink($src).'" alt="'.$desc.'"></A></TD></TR>'."\n";
 }
 ?>
 						</TABLE>

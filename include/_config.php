@@ -2,11 +2,17 @@
 
 	Error_Reporting(E_ALL & ~E_NOTICE);
 	// If you use Apache to set these variables (RECOMMENDED), comment out the 4 lines below
-	$SQL_HOST='localhost';			// the sql server name or IP address
+/*	$SQL_HOST='localhost';			// the sql server name or IP address
 	$SQL_USER='admin';				// the username to use for mysql
 	$SQL_PASS='123';				// the password for above
 	$SQL_DB='serguius';				// the database name on the above server to use
 	$PSA_SITE_NAME = '/serguius/';	//
+*/
+	$SQL_HOST='localhost';			// the sql server name or IP address
+	$SQL_USER='onyano_serguius';	// the username to use for mysql
+	$SQL_PASS='fkbcfabab';			// the password for above
+	$SQL_DB='onyano_serguius';		// the database name on the above server to use
+	$PSA_SITE_NAME = 'http://serguius.ru/';	//
 
 	$ADMINMMODE=FALSE;
 /**************** SHOULD NOT NEED TO EDIT ANYTHING BELOW THIS LINE ****************/

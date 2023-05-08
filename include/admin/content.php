@@ -26,10 +26,10 @@ if(isset($sec_sys->ITEM)) {
 	echo '			<img id="srcimg" class="fullsize" src="'.$item['src'].'" onclick="openImgSelector(\'src\',\'srcimg\');"></TD>'."\n";
 	echo '	</TR>'."\n";
 	echo '	<TR>'."\n";
-	echo '		<TD class="left_descr"><textarea name="title" rows=1 cols=25>'.$item['title'].'</textarea></TD>'."\n";
+	echo '		<TD class="left_descr"><textarea name="title" rows=3 cols=25>'.$item['title'].'</textarea></TD>'."\n";
 	echo '		<TD rowspan=2><input id="preview" name="preview" type="hidden" value="'.$item['preview'].'">'."\n";
 	echo '			<img id="previewimg" class="preview" src="'.$item['preview'].'" onclick="openImgSelector(\'preview\',\'previewimg\');"></TD>'."\n";
-	echo '		<TD class="right_descr"><textarea name="description" rows=1 cols=25>'.$item['description'].'</textarea></TD>'."\n";
+	echo '		<TD class="right_descr"><textarea name="description" rows=3 cols=25>'.$item['description'].'</textarea></TD>'."\n";
 	echo '	</TR>'."\n";
 	echo '	<TR>'."\n";
 	echo '		<TD class="left_descr"><input type="submit" name="delete" value="Удалить"></TD>'."\n";
