@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  php:
+    build: ./
+    volumes:
+      - ./:/var/www/html
+      - ./docker/images/:/var/www/html/images/
+      - ./docker/_config.php:/var/www/html/include/_config.php
+      - ./docker/apache2.conf:/etc/apache2/apache2.conf
+      - ./docker/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+    ports:
+      - 8000:8000
+    command: php -S 0.0.0.0:8000 -t /var/www/html
+    networks:
+      - default
+
+  db:
+    container_name:  serguius-db
+    image: mysql:5.7
+    # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
+    # (this is just an example, not intended to be a production configuration)
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: serguius
+      MYSQL_ROOT_PASSWORD: serguius
+      MYSQL_USER: serguius
+      MYSQL_PASSWORD: serguius
+    ports:
+      - 3306:3306
+    networks:
+      - default
+    volumes:
+      - ./docker/dockerdb:/var/lib/mysql
+      - ./docker/dockerdbinit:/docker-entrypoint-initdb.d/
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: serguius-phpmyadmin
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80

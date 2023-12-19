@@ -14,10 +14,10 @@ echo $sec_sys->getHead();
 <?php
 if($sec_sys->isLoggedIn()){
 	print "		<TABLE class=\"inner\"><TR>\n";
-	print "			<TD align=center><a href=\"categories.html\">Категории</a></TD>\n";
+	print "			<TD align=center><a href=\"categories.html\">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a></TD>\n";
 	if($ADMINMMODE)
-		print "			<TD align=center><a href=\"users.html\">Пользователи</a></TD>\n";
-	print "			<TD align=center><a href=\"settings.html\">Настройки</a></TD>\n";
+		print "			<TD align=center><a href=\"users.html\">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a></TD>\n";
+	print "			<TD align=center><a href=\"settings.html\">пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</a></TD>\n";
 	print "		</TR></TABLE>\n";
 }
 else echo "&nbsp;";
@@ -77,7 +77,7 @@ if($sec_sys->CATEGORY==$sec_sys->CATEGORY_CONTACT) {
 	$src = 'images/about_notactiv.jpg';
 }
 else {
-	$desc = "Contacts. Контакты";
+	$desc = "Contacts. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 	$src = 'images/about_activ.jpg';
 }
 echo '						<A href="'.$link.'"; title="'.$desc.'"><IMG class="contact" alt="'.$desc.'" src="'.$sec_sys->getImgLink($src).'"></A>'."\n";
@@ -86,10 +86,9 @@ echo '						<A href="'.$link.'"; title="'.$desc.'"><IMG class="contact" alt="'.$
 				</TR>
 			</TABLE>
 		</TD></TR>
-		<TR><TD class="copyright"><A class="copyright" href="login.html">&copy; Агасарян Сергей</A></TD></TR>
+		<TR><TD class="copyright"><A class="copyright" href="login.html">&copy; пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</A></TD></TR>
 	</TABLE>
 </TD><TD class="reklama">
-<?php include $PHPSECURITYADMIN_PATH.'/include/recklama.html'; ?>
 </TD></TR></TABLE>
 </DIV>
 </BODY>
