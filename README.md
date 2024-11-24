@@ -1,21 +1,19 @@
-# Getting Started with Create React App
+### Описание
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Разработан в 2004 на статичном HTML, Позднее переписан на PHP с использованием готовых библиотек phpSecurityAdmin и phpMysqlConnection.
 
-## Available Scripts
+База данных на MySQL.
 
-In the project directory, you can run:
+Дизайн предоставлен заказчиком.
 
-### `npm start`
+За 2005-2010 года я разработал около 30 разных сайтов c аналогичной архитектурой.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Developed in 2004 with use static HTML, later rewritten to PHP using phpSecurityAdmin and phpMysqlConnection libraries.
 
-## Learn More
+Database: MySQL.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Design by customer.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I developed about 30 different sites with a similar architecture during 2005-2010.
